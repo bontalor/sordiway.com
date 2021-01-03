@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
+<body>
 		<link rel="icon" href="favicon.png">
 <title>sorder</title>
-	<video controls autoplay="true">
-		<source src="jebaited.mp4" type="video/mp4">
-		</video>
+	<h1><img src="https://cdn.betterttv.net/emote/5f579bee68d9d86c020e18d0/2x"/><a href="https://www.youtube.com/watch?v=d1YBv2mWll0"target="_blank"> sort of way </a><img src="https://cdn.betterttv.net/emote/5f579c066084af6c1719d00c/2x"/></h1>
+	<div id="clickbean">
+	<h3>click the bean :3</h3>
+	</div>
+<div id="recentvid">
+	<h2>newest sordishitposts vid :D</h2>
+	<iframe class="latestVideoEmbed" vnum='0' cid="UCN14veXutpGIKylmllN5tqQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+function loadVideo(iframe) {
+$.getJSON(reqURL + iframe.getAttribute('cid'),
+	function(data) {
+		var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+		console.log(videoNumber);
+		var link = data.items[videoNumber].link;
+		id = link.substr(link.indexOf("=") + 1);
+		iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=1&autoplay=1");
+	}
+);
+}
+var iframes = document.getElementsByClassName('latestVideoEmbed');
+for (var i = 0, len = iframes.length; i < len; i++) {
+loadVideo(iframes[i]);
+}
+</script>
+
+</div>
+<img id="item" src="https://cdn.betterttv.net/emote/5ec8895e10aaa55e29467e6b/3x" />
+<script>
+var object = document.getElementById('item');
+
+object.onclick=function(){
+	var x = Math.floor(Math.random()*800);
+	var y = Math.floor(Math.random()*1920);
+	object.style.top = x + 'px';
+	object.style.left = y + 'px';
+};
+</script>
 	<link href="styles.css" type="text/css" rel="stylesheet"/>
+</body>
 </html>
