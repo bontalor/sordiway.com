@@ -42,6 +42,16 @@ object.onclick=function(){
 	object.style.left = y + 'px';
 };
 </script>
+<img id="startOrStopImg" class="dancepls" src="https://cdn.betterttv.net/emote/55f5e7cd7f08be9f0a63d008/3x" alt="Play Button">
+<audio id="audio" src="feramoniscool.mp3" type="audio/mp3">
+</audio>
+<script>
+document.getElementById("startOrStopImg").onclick = function() {
+	var audio = document.getElementById("audio");
+	if (audio.paused) audio.play();
+	else audio.pause();
+};
+</script>
 	<link href="styles.css" type="text/css" rel="stylesheet"/>
 </body>
 </html>

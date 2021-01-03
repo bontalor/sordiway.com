@@ -58,3 +58,11 @@ a:hover, a:active { text-decoration: none; color:#7eebf4 }
 a {
   text-decoration: none;
 }
+
+.dancepls {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width:112px;
+    height:112px;
+}
