@@ -34,7 +34,29 @@ loadVideo(iframes[i]);
 </script>
 
 </div>
-<img id="item" src="https://cdn.betterttv.net/emote/5ec8895e10aaa55e29467e6b/3x" />
+<a href="javascript:playSound('bean');"><img id="item" onClick="play()" src="https://cdn.betterttv.net/emote/5ec8895e10aaa55e29467e6b/3x">
+</a>
+<script>
+function play() {
+	var audio = document.getElementById('bean');
+	if (audio.paused) {
+			audio.play();
+	}else{
+			audio.currentTime = 0
+	}
+}
+</script>
+  <audio id="bean"  src="bean.mp3" preload="auto"></audio>
+	<script>
+	function playSound(animal) {
+document.getElementById(animal).play();
+aud.addEventListener("ended", function(){
+    this.currentTime = 0;
+    this.pause();
+});
+};
+
+	</script>
 <script>
 var object = document.getElementById('item');
 
@@ -54,6 +76,30 @@ document.getElementById("startOrStopImg").onclick = function() {
 	if (audio.paused) audio.play();
 	else audio.pause();
 };
+</script>
+<img onCLick="play()" class="m0xyBonk" src="https://static-cdn.jtvnw.net/emoticons/v1/302267054/3.0"/>
+	<audio id="audio1" src="eugh.mp3"></audio>
+<img onClick="play2()" class="BOP" src="https://static-cdn.jtvnw.net/emoticons/v1/301428702/3.0"/>
+	<audio id="audio2" src="bonk.mp3"></audio>
+<script>
+function play() {
+	var audio = document.getElementById('audio1');
+	if (audio.paused) {
+			audio.play();
+	}else{
+			audio.currentTime = 0
+	}
+}
+</script>
+<script>
+function play2() {
+	var audio = document.getElementById('audio2');
+	if (audio.paused) {
+			audio.play();
+	}else{
+			audio.currentTime = 0
+	}
+}
 </script>
 </body>
 </html>

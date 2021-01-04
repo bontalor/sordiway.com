@@ -66,3 +66,31 @@ a {
     width:112px;
     height:112px;
 }
+
+.m0xyBonk {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width:112px;
+    height:112px;
+}
+
+.BOP {
+    position: absolute;
+    left: 130px;
+    bottom: 0px;
+    width:112px;
+    height:112px;
+}
+
+.m0xyBonk:hover {
+    cursor: pointer;
+}
+
+.BOP:hover {
+    cursor: pointer;
+}
+
+.dancepls:hover {
+    cursor: pointer;
+}
