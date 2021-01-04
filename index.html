@@ -47,10 +47,9 @@ loadVideo(iframes[i]);
 </script>
 
 </div>
-<a href="javascript:playSound('bean');"><img id="item" class="bean" onClick="play()" src="https://cdn.betterttv.net/emote/5ec8895e10aaa55e29467e6b/3x">
-</a>
+<a href="javascript:playSound('bean');"><img id="item" class="bean" onClick="playbean()" src="https://cdn.betterttv.net/emote/5ec8895e10aaa55e29467e6b/3x"></a>
 <script>
-function play() {
+function playbean() {
 	var audio = document.getElementById('bean');
 	if (audio.paused) {
 			audio.play();

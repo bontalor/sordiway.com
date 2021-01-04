@@ -106,6 +106,7 @@ a {
     left: 100px;
     width:112px;
     height:112px;
+    z-index: 999;
 }
 
 .dancepls {
