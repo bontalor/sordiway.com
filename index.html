@@ -81,6 +81,8 @@ document.getElementById("startOrStopImg").onclick = function() {
 	<audio id="audio1" src="eugh.mp3"></audio>
 <img onClick="play2()" class="BOP" src="https://static-cdn.jtvnw.net/emoticons/v1/301428702/3.0"/>
 	<audio id="audio2" src="bonk.mp3"></audio>
+<img onClick="play3()" class="Cringe" src="https://cdn.betterttv.net/emote/5efa994579645a0dec359ecc/3x"/>
+	<audio id="audio3" src="mainend.mp3"></audio>
 <script>
 function play() {
 	var audio = document.getElementById('audio1');
@@ -94,6 +96,17 @@ function play() {
 <script>
 function play2() {
 	var audio = document.getElementById('audio2');
+	if (audio.paused) {
+			audio.play();
+	}else{
+			audio.currentTime = 0
+	}
+}
+</script>
+</script>
+<script>
+function play3() {
+	var audio = document.getElementById('audio3');
 	if (audio.paused) {
 			audio.play();
 	}else{

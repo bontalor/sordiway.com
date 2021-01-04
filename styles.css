@@ -83,6 +83,14 @@ a {
     height:112px;
 }
 
+.Cringe {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width:112px;
+    height:112px;
+}
+
 .m0xyBonk:hover {
     cursor: pointer;
 }
@@ -92,5 +100,9 @@ a {
 }
 
 .dancepls:hover {
+    cursor: pointer;
+}
+
+.Cringe:hover {
     cursor: pointer;
 }
