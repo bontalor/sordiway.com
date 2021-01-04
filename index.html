@@ -6,7 +6,20 @@
 		<title>sorder</title>
 		<link href="styles.css" type="text/css" rel="stylesheet"/>
 	</head>
-	<h1><img src="https://cdn.betterttv.net/emote/5f579bee68d9d86c020e18d0/2x"/><a href="https://www.youtube.com/watch?v=d1YBv2mWll0"target="_blank"> sort of way </a><img src="https://cdn.betterttv.net/emote/5f579c066084af6c1719d00c/2x"/></h1>
+	<h1><img id="sort" src="https://cdn.betterttv.net/emote/5f579bee68d9d86c020e18d0/2x"/><a onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')" class="sortofway"> sort of way </a><img src="https://cdn.betterttv.net/emote/5f579c066084af6c1719d00c/2x"/></h1>
+<audio id='mySound' src='jebaited.mp3'></audio>
+<script>
+function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+</script>
 	<div id="clickbean">
 	<h3>click the bean :3</h3>
 	</div>
@@ -68,11 +81,11 @@ object.onclick=function(){
 };
 </script>
 <img id="startOrStopImg" class="dancepls" src="https://cdn.betterttv.net/emote/55f5e7cd7f08be9f0a63d008/3x" alt="Play Button">
-<audio id="audio" src="feramoniscool.mp3" type="audio/mp3">
+<audio id="feramon" src="feramoniscool.mp3" type="audio/mp3">
 </audio>
 <script>
 document.getElementById("startOrStopImg").onclick = function() {
-	var audio = document.getElementById("audio");
+	var audio = document.getElementById("feramon");
 	if (audio.paused) audio.play();
 	else audio.pause();
 };
