@@ -37,7 +37,7 @@ img.a {
   cursor: pointer;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 20px;
   transition: all 1s;
 }
 
@@ -59,34 +59,42 @@ a {
   text-decoration: none;
 }
 
+
+
+.bean {
+    left: 100px;
+    width:112px;
+    height:112px;
+}
+
 .dancepls {
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: 20px;
+    bottom: 20px;
     width:112px;
     height:112px;
 }
 
 .m0xyBonk {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 20px;
+    bottom: 20px;
     width:112px;
     height:112px;
 }
 
 .BOP {
     position: absolute;
-    left: 130px;
-    bottom: 0px;
+    left: 150px;
+    bottom: 20px;
     width:112px;
     height:112px;
 }
 
 .Cringe {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 20px;
+    top: 20px;
     width:112px;
     height:112px;
 }
