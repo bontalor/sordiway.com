@@ -23,6 +23,9 @@ function StopSound(soundobj) {
 	<div id="clickbean">
 	<h3>click the bean :3</h3>
 	</div>
+	<div id="beaninbag">
+	<h3>try and put bean in the bag!</h3>
+	</div>
 <div id="recentvid">
 	<h2>newest sordishitposts vid :D</h2>
 	<iframe class="latestVideoEmbed" vnum='0' cid="UCN14veXutpGIKylmllN5tqQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
@@ -73,8 +76,8 @@ aud.addEventListener("ended", function(){
 var object = document.getElementById('item');
 
 object.onclick=function(){
-	var x = Math.floor(Math.random()*80);
-	var y = Math.floor(Math.random()*80);
+	var x = Math.floor(Math.random()*65);
+	var y = Math.floor(Math.random()*20);
 	object.style.top = x + '%';
 	object.style.left = y + '%';
 };
@@ -95,6 +98,9 @@ document.getElementById("startOrStopImg").onclick = function() {
 	<audio id="audio2" src="bonk.mp3"></audio>
 <img onClick="play3()" class="Cringe" src="https://cdn.betterttv.net/emote/5efa994579645a0dec359ecc/3x"/>
 	<audio id="audio3" src="mainend.mp3"></audio>
+<img onmouseover="PlaySound('audio4')" onmouseout="StopSound('audio4')" class="beanbag" src="beanbag.png"/>
+	<audio id="audio4" src="beanbag.mp3"></audio>
+
 <script>
 function play() {
 	var audio = document.getElementById('audio1');

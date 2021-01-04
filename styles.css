@@ -88,6 +88,13 @@ img.a {
   padding-top: 10px;
 }
 
+#beaninbag {
+  color: #FFFFFF;
+  position: absolute;
+  left: 280px;
+  top: 500px;
+}
+
 a { color:#7eebf4 } /* Globally */
 
 /* Each state */
@@ -106,7 +113,7 @@ a {
     left: 100px;
     width:112px;
     height:112px;
-    z-index: 999;
+    z-index: 998;
 }
 
 .dancepls {
@@ -139,6 +146,15 @@ a {
     top: 20px;
     width:112px;
     height:112px;
+}
+
+.beanbag {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width:200px;
+    height:200px;
+    z-index: 999;
 }
 
 .m0xyBonk:hover {
