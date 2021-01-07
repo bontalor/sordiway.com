@@ -48,6 +48,21 @@ a:hover {
 	animation: linkhover 5s infinite;
 }
 
+.sitemessage {
+    font-size: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 325s infinite linear;
+    padding-left: 100%; /*Initial offset*/
+    color: white;
+}
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 @keyframes linkhover {
 	7.14%, 57.14% {color:#ff0000;}
 	14.28%, 54.28% {color:#ff7f00;}
@@ -78,7 +93,6 @@ img.a {
  #item {
   cursor: pointer;
   position: absolute;
-  top: 0px;
   left: 20px;
   transition: all 1s;
 }
@@ -115,6 +129,7 @@ a {
     width:112px;
     height:112px;
     z-index: 998;
+    top: 75px;
 }
 
 .dancepls {
@@ -144,7 +159,7 @@ a {
 .Cringe {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 75px;
     width:112px;
     height:112px;
 }
