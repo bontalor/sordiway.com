@@ -183,6 +183,14 @@ a {
     z-index: 999;
 }
 
+.watchingstream {
+  position: absolute;
+  right: 130px;
+  bottom: 20px;
+  width:112px;
+  height:112px;
+}
+
 .m0xyBonk:hover {
     cursor: pointer;
 }
@@ -201,4 +209,8 @@ a {
 
 .sortofway {
     cursor: no-drop;
+}
+
+.watchingstream {
+    cursor: pointer;
 }

@@ -123,6 +123,8 @@ document.getElementById("startOrStopImg").onclick = function() {
 	<audio id="audio2" src="bonk.mp3"></audio>
 <img onClick="play3()" class="Cringe" src="https://cdn.betterttv.net/emote/5efa994579645a0dec359ecc/3x"/>
 	<audio id="audio3" src="mainend.mp3"></audio>
+<img onClick="play5()" class="watchingstream" src="https://cdn.frankerfacez.com/emoticon/517263/4"/>
+	<audio id="audio5" src="erobb.mp3"></audio>
 <img onmouseover="PlaySound('audio4')" onmouseout="StopSound('audio4')" class="beanbag" src="beanbag.png"/>
 	<audio id="audio4" src="beanbag.mp3"></audio>
 
@@ -150,6 +152,16 @@ function play2() {
 <script>
 function play3() {
 	var audio = document.getElementById('audio3');
+	if (audio.paused) {
+			audio.play();
+	}else{
+			audio.currentTime = 0
+	}
+}
+</script>
+<script>
+function play5() {
+	var audio = document.getElementById('audio5');
 	if (audio.paused) {
 			audio.play();
 	}else{
