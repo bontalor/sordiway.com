@@ -17,6 +17,16 @@ body {
   color: #FFFFFF;
 }
 
+#recentvid2 {
+  color:#FFFFFF;
+  font-size: 200
+}
+
+#sordiwayvid {
+  height: auto;
+  width: auto;
+}
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
